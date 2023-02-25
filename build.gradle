@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //TestNG
+    testImplementation 'org.testng:testng:7.7.1'
+
+    //dummy Text
+    testImplementation 'com.thedeanda:lorem:2.1'
+
+    //Rest Assured
+    testImplementation 'io.rest-assured:rest-assured:5.3.0'
+    testImplementation 'io.rest-assured:json-path:5.3.0'
+    testImplementation 'io.rest-assured:xml-path:5.3.0'
+
+    // JSON
+    testImplementation 'com.googlecode.json-simple:json-simple:1.1.1'
+
+    // Pojo class
+    testImplementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.2.2'
+}
+
+test {
+    useTestNG()
+}
