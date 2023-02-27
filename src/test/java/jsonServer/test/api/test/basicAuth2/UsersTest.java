@@ -1,4 +1,4 @@
-package jsonServer.test.api.test.basicAuth;
+package jsonServer.test.api.test.basicAuth2;
 
 import io.restassured.http.ContentType;
 import jsonServer.test.api.test.BaseBatch4ApiTest;

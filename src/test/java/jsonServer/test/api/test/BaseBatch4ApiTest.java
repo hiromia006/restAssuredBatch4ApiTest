@@ -7,7 +7,7 @@ public class BaseBatch4ApiTest {
     @BeforeClass
     public void setUp() {
         RestAssured.baseURI = "https://apingweb.com";
-        RestAssured.basePath = "/api/auth";
+        RestAssured.basePath = "/api";
         RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
     }
 }
